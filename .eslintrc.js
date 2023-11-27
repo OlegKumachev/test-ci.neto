@@ -5,12 +5,15 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:jest/recommended" 
     ],
     "overrides": [
         {
             "env": {
-                "node": true
+                "browser": true,
+                "node": true,
+                "jest": true
             },
             "files": [
                 ".eslintrc.{js,cjs}"
@@ -25,7 +28,8 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "jest"
     ],
     "rules": {
         "no-console": "off",
